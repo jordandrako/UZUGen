@@ -1,0 +1,60 @@
+.site-container {
+  %btn {
+    font-family: $serif;
+    font-size: 1.25em;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin: 5px;
+    padding: 10px 15px;
+
+    transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+    background-color: $button-color;
+  }
+  button,
+  .btn,
+  .button,
+  input[type=submit],
+  input[type=reset],
+  .vc_read_more {
+    background-color: $button-color;
+    box-shadow: 0 0 0 5px $button-color;
+
+    @extend %btn;
+    &:hover {
+      background-color: $button-hover;
+      box-shadow: 0 0 0 5px $button-hover;
+    }
+    &:active {
+      top: 1px;
+
+      box-shadow: 0 0 0 5px $button-hover;
+    }
+    &.small{
+      font-family: $sans-serif;
+      font-size: 1em;
+
+      margin: 0;
+      padding: 5px 7px;
+
+      text-transform: capitalize;
+
+      box-shadow: none;
+      &:hover {
+        box-shadow: none;
+      }
+      &:active {
+        box-shadow: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,805 @@
+// # Structure and Layout
+//------------------------------------------------------------------------------------//-------------- */
+
+// ## Site Containers
+//--------------------------------------------- */
+
+.site-inner,
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-inner {
+  clear: both;
+
+  padding-top: 60px;
+  padding-right: 8%;
+  padding-left: 8%;
+
+  background-color: $white;
+}
+
+// # Common Classes
+//------------------------------------------------------------------------------------//-------------- */
+
+// ## Avatar
+//--------------------------------------------- */
+
+.avatar {
+  float: left;
+}
+
+.alignleft .avatar,
+.author-box .avatar {
+  margin-right: 24px;
+}
+
+.alignright .avatar {
+  margin-left: 24px;
+}
+
+.author-box .avatar {
+  width: 80px;
+  height: 80px;
+}
+
+.comment .avatar {
+  width: 50px;
+  height: 50px;
+  margin: 0 16px 24px 0;
+}
+
+// ## Genesis
+//--------------------------------------------- */
+
+.breadcrumb {
+  margin-bottom: 30px;
+}
+
+.archive-description,
+.author-box {
+  font-size: 1em;
+
+  margin-bottom: 60px;
+  padding: 30px;
+
+  background-color: $white;
+}
+
+.single .author-box {
+  padding-top: 30px;
+
+  border-top: 5px solid $lightgrey;
+}
+
+.author-box-title {
+  font-size: 1em;
+
+  margin-bottom: 4px;
+}
+
+.archive-description p:last-child,
+.author-box p:last-child {
+  margin-bottom: 0;
+}
+
+// ## Search Form
+//--------------------------------------------- */
+
+.search-form {
+  overflow: hidden;
+}
+
+.site-header .search-form {
+  width: 50%;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search-form input {
+  -webkit-appearance: none;
+}
+
+.entry-content .search-form,
+.site-header .search-form {
+  width: 50%;
+}
+
+.search-form input[type='submit'] {
+  position: absolute;
+
+  clip: rect(0, 0, 0, 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
+
+// ## Titles
+//--------------------------------------------- */
+
+.archive-title {
+  font-size: 1.25em;
+}
+
+.entry-title {
+  font-size: 2.2em;
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+  color: $darkgrey;
+}
+
+.entry-title a:hover {
+  color: $red;
+}
+
+.widget-title {
+  font-size: 1em;
+
+  margin-bottom: 20px;
+}
+
+.footer-widgets .widget-title {
+  color: $white;
+}
+
+// ## WordPress
+//--------------------------------------------- */
+
+a.aligncenter img {
+  display: block;
+
+  margin: 0 auto;
+}
+
+a.alignnone {
+  display: inline-block;
+}
+
+.alignleft {
+  float: left;
+
+  text-align: left;
+}
+
+.alignright {
+  float: right;
+
+  text-align: right;
+}
+
+a.alignleft,
+a.alignnone,
+a.alignright {
+  max-width: 100%;
+}
+
+img.centered,
+.aligncenter {
+  display: block;
+
+  margin: 0 auto 24px;
+}
+
+img.alignnone,
+.alignnone {
+  margin-bottom: 12px;
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+  margin: 0 24px 24px 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+  margin: 0 0 24px 24px;
+}
+
+.wp-caption-text {
+  font-size: .85em;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.entry-content p.wp-caption-text {
+  margin-bottom: 0;
+}
+
+
+
+
+
+// # Widgets
+//------------------------------------------------------------------------------------//-------------- */
+
+.widget {
+  word-wrap: break-word;
+}
+
+.widget ol > li {
+  padding-left: 20px;
+
+  list-style-position: inside;
+  list-style-type: decimal;
+
+  text-indent: -20px;
+}
+
+.widget li li {
+  margin: 0 0 0 30px;
+  padding: 0;
+
+  border: none;
+}
+
+.widget_calendar table {
+  width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+  text-align: center;
+}
+
+.sticky-message {
+  padding: 10px 5%;
+  .widget-title {
+    margin-bottom: 10px;
+
+    color: $alert;
+  }
+}
+
+// ## Featured Content
+//--------------------------------------------- */
+
+.featured-content .entry {
+  margin-bottom: 20px;
+  padding: 0 0 24px;
+
+  border-bottom: 2px solid $lightgrey;
+}
+
+.footer-widgets .entry {
+  border-bottom: 1px dotted #666;
+}
+
+.featured-content .entry-title {
+  font-size: 1.25em;
+}
+
+// # Site Header
+//-------------------------------------------------------------------------------------------------- */
+
+.site-header {
+  text-align: center;
+
+  background-color: $white;
+}
+
+.site-header .wrap {
+  padding: 20px 0;
+}
+
+// ## Title Area
+//--------------------------------------------- */
+
+.title-area {
+  float: left;
+
+  width: 360px;
+  padding: 10px 0;
+}
+
+.header-full-width .title-area {
+  width: 100%;
+}
+
+.site-title {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.4;
+
+  margin-bottom: 0;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.site-title a,
+.site-title a:hover {
+  color: $darkgrey;
+}
+
+.header-image .site-title > a {
+  float: left;
+
+  width: 100%;
+  min-height: 57px;
+
+  background-position: center center !important;
+  background-size: 300px 57px !important;
+}
+
+.site-description {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+
+  margin-bottom: 10px;
+}
+
+.site-description,
+.site-title {
+  line-height: 1.2;
+}
+
+.header-image .site-description,
+.header-image .site-title {
+  display: block;
+
+  text-indent: -9999px;
+}
+
+// ## Widget Area
+//--------------------------------------------- */
+
+.header-widget-area .widget_text {
+  margin-top: 10px;
+}
+
+.header-widget-area .widget_text p {
+  margin-bottom: 0;
+}
+
+
+
+// # Site Navigation
+//------------------------------------------------------------------------------------//-------------- */
+
+.genesis-nav-menu {
+  font-size: .85em;
+  line-height: 1;
+
+  clear: both;
+
+  width: 100%;
+}
+
+.genesis-nav-menu .menu-item {
+  display: inline-block;
+
+  text-align: left;
+}
+
+.genesis-nav-menu a {
+  display: block;
+
+  padding: 20px;
+
+  color: $darkgrey;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: $red;
+}
+
+.genesis-nav-menu .sub-menu {
+  position: relative;
+  z-index: 99;
+  left: auto;
+
+  transition: opacity .4s ease-in-out;
+
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.genesis-nav-menu .sub-menu a {
+  font-size: .75em;
+
+  position: relative;
+
+  padding: 20px;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+  margin: -55px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+  position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+  left: auto;
+
+  opacity: 1;
+}
+
+// ## Site Header Navigation
+//--------------------------------------------- */
+
+.site-header .sub-menu {
+  border-top: 1px solid $lightgrey;
+}
+
+.site-header .sub-menu .sub-menu {
+  margin-top: -56px;
+}
+
+.site-header .genesis-nav-menu li li {
+  margin-left: 0;
+}
+
+// ## Primary Navigation
+//--------------------------------------------- */
+
+.nav-primary {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: $darkgrey;
+}
+
+.nav-primary .genesis-nav-menu a {
+  color: $white;
+}
+
+.nav-primary .genesis-nav-menu .sub-menu a {
+  color: rgba($white,.6);
+}
+
+.nav-primary .genesis-nav-menu a:hover,
+.nav-primary .genesis-nav-menu .current-menu-item > a,
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: $red;
+}
+
+// ## Secondary Navigation
+//--------------------------------------------- */
+
+.nav-secondary {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid darken($white, 5%);
+  background-color: $white;
+}
+
+//* Responsive Navigation
+//--------------------------------------------- */
+
+.responsive-menu-icon,
+.responsive-menu .menu-item-has-children {
+  cursor: pointer;
+}
+
+.responsive-menu .menu-item,
+.responsive-menu-icon {
+  display: block;
+}
+
+.responsive-menu,
+.responsive-menu > .menu-item > .sub-menu {
+  display: none;
+}
+
+.responsive-menu-icon {
+  text-align: center;
+}
+
+.responsive-menu-icon::before {
+  font: normal 20px/1 'dashicons';
+
+  display: inline-block;
+
+  margin: 0 auto;
+  padding: 10px;
+
+  content: '\f333';
+
+  color: $black;
+}
+
+.nav-primary .responsive-menu-icon::before,
+.nav-primary .responsive-menu > .menu-item-has-children:before {
+  color: $white;
+}
+
+.responsive-menu > .menu-item-has-children:before {
+  font: normal 16px/1 'dashicons';
+
+  z-index: 9999;
+  right: 0;
+
+  float: right;
+
+  height: 16px;
+  padding: 15px 20px;
+
+  content: '\f347';
+  text-align: right;
+}
+
+.responsive-menu .menu-open.menu-item-has-children:before {
+  content: '\f343';
+}
+
+.responsive-menu .sub-menu .sub-menu {
+  margin: 0;
+}
+
+
+// # Content Area
+//------------------------------------------------------------------------------------//-------------- */
+
+// ## Entries
+//--------------------------------------------- */
+
+.entry,
+.page.page-template-page_blog-php .entry {
+  margin-bottom: 60px;
+
+  border-bottom: 5px solid $white;
+}
+
+.page .entry,
+.single .entry {
+  margin-bottom: 30px;
+
+  border-bottom: 0;
+}
+
+.entry-content ol,
+.entry-content ul {
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+.entry-content ol > li {
+  list-style-type: decimal;
+}
+
+.entry-content ul > li {
+  list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+  margin-bottom: 0;
+}
+
+.entry-content code {
+  padding: .15em;
+
+  color: $darkgrey;
+  border: 1px solid rgba($darkgrey, .5);
+  background-color: rgba($darkgrey, .25);
+}
+
+// ## Entry Meta
+//--------------------------------------------- */
+
+p.entry-meta {
+  font-size: .85em;
+
+  margin-bottom: 0;
+}
+
+.entry-header .entry-meta {
+  margin-top: -10px;
+  margin-bottom: 24px;
+}
+
+.entry-footer .entry-meta {
+  font-weight: 400;
+
+  margin-bottom: 60px;
+}
+
+.entry-categories,
+.entry-tags {
+  display: block;
+}
+
+.entry-comments-link::before {
+  margin: 0 6px 0 2px;
+
+  content: '\2014';
+}
+
+// ## Pagination
+//--------------------------------------------- */
+
+.pagination {
+  clear: both;
+
+  margin: 60px 0;
+}
+
+.adjacent-entry-pagination {
+  margin-bottom: 0;
+}
+
+.archive-pagination li {
+  display: inline;
+}
+
+.archive-pagination li a {
+  font-size: .85em;
+
+  display: inline-block;
+
+  padding: 8px 12px;
+
+  cursor: pointer;
+
+  color: $white;
+  background-color: $darkgrey;
+}
+
+.archive-pagination li a:hover,
+.archive-pagination .active a {
+  background-color: $red;
+}
+
+// ## Comments
+//--------------------------------------------- */
+
+p.comment-meta,
+.entry-comments .comment,
+.entry-comments .comment-reply {
+  margin-bottom: 40px;
+}
+
+.comment-respond {
+  margin-bottom: 60px;
+}
+
+.entry-comments .comment:last-child {
+  margin-bottom: 0;
+}
+
+.comment-respond {
+  padding-top: 60px;
+}
+
+.entry-comments {
+  padding-top: 20px;
+}
+
+.comment-header {
+  font-size: 16px;
+}
+
+.comment-notes,
+.entry-pings .reply {
+  display: none;
+}
+
+.entry-comments .comment {
+  border-bottom: 5px solid $white;
+}
+
+p.comment-form-comment {
+  margin-bottom: 20px;
+}
+
+p.form-submit,
+.entry-comments .children .comment,
+.entry-comments .comment-author {
+  margin: 0;
+}
+
+.entry-comments .comment {
+  clear: both;
+}
+
+.entry-comments .children .comment {
+  border: none;
+}
+
+.comment-list li {
+  list-style-type: none;
+}
+
+
+// # Sidebars
+//------------------------------------------------------------------------------------//-------------- */
+
+.sidebar {
+  font-size: 1em;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px dotted $lightgrey;
+}
+
+.sidebar p:last-child,
+.sidebar ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar .widget {
+  margin-bottom: 60px;
+
+  background-color: $white;
+}
+
+
+// # Footer Widgets
+//------------------------------------------------------------------------------------//-------------- */
+
+.footer-widgets {
+  clear: both;
+
+  padding-top: 60px;
+  padding-right: 5%;
+  padding-left: 5%;
+
+  background-color: $darkgrey;
+}
+
+.footer-widgets,
+.footer-widgets a {
+  color: #999;
+}
+
+.footer-widgets input {
+  border: 1px solid $darkgrey;
+}
+
+.footer-widgets a.button,
+.footer-widgets a:hover {
+  color: $white;
+}
+
+.footer-widgets li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px dotted #666;
+}
+
+.footer-widgets .widget {
+  margin-bottom: 60px;
+}
+
+.footer-widgets p:last-child {
+  margin-bottom: 0;
+}
+
+
+// # Site Footer
+//------------------------------------------------------------------------------------//-------------- */
+
+.site-footer {
+  font-size: 1em;
+
+  padding: 40px 5%;
+
+  text-align: center;
+
+  background-color: $white;
+}
+
+.site-footer p {
+  margin-bottom: 0;
+}

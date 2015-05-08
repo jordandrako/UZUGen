@@ -1,0 +1,43 @@
+// Colors
+$blue: #bed4df;
+$darkblue: #323e4e;
+$red: #e5554e;
+$darkred: #5e1915;
+$white: #f2f2f2;
+$lightgrey: #eee;
+$lightgray: $lightgrey;
+$darkgrey: #333;
+$darkgray: $darkgrey;
+$black: #141414;
+
+$primary: $darkgrey;
+$secondary: $blue;
+$accent: $red;
+$alert: $red;
+
+// Type
+$sans-serif: lato, helvetica, arial, sans-serif;
+$serif: Garamond, Times, serif;
+
+$body-font: $sans-serif;
+$heading-font: $sans-serif;
+
+$text-color: $darkgrey;
+$link-color: $red;
+$link-hover: $darkred;
+$heading-color: $darkblue;
+
+// Invert
+$heading-invert: $white;
+$text-invert: $blue;
+$link-invert: $white;
+$hover-invert: $red;
+
+// Breakpoints
+$break-med: 768px;
+$break-lg: 1024px;
+
+// Elements
+$button-color: $red;
+$button-hover: $darkblue;
+

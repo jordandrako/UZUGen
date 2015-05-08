@@ -1,0 +1,159 @@
+// # Plugins
+//------------------------------------------------------------------------------------//-------------- */
+
+// ## Genesis eNews Extended
+//--------------------------------------------- */
+
+.enews-widget,
+.enews-widget .widget-title {
+  color: $white;
+}
+
+.sidebar .widget.enews-widget {
+  padding: 40px;
+
+  background-color: $darkgrey;
+}
+
+.enews-widget input,
+.enews-widget input:focus {
+  border: 1px solid $darkgrey;
+}
+
+.enews-widget input {
+  font-size: 1em;
+
+  margin-bottom: 16px;
+}
+
+.enews-widget input[type='submit'] {
+  width: 100%;
+  margin: 0;
+
+  color: $white;
+  background-color: $red;
+}
+
+.enews-widget input:hover[type='submit'] {
+  color: $darkgrey;
+  background-color: $white;
+}
+
+.enews form + p {
+  margin-top: 24px;
+}
+
+/* Genesis Simple Share
+--------------------------------------------- */
+
+.content .share-after {
+  margin-bottom: 20px;
+}
+
+.content a.count,
+.content a.count:hover,
+.content a.share,
+.content a.share:hover {
+  font-weight: 400;
+
+  border: none;
+}
+
+.content .share-filled .share {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.content .share-filled .count {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.content .share-filled .facebook .count,
+.content .share-filled .facebook .count:hover,
+.content .share-filled .googlePlus .count,
+.content .share-filled .googlePlus .count:hover,
+.content .share-filled .linkedin .count,
+.content .share-filled .linkedin .count:hover,
+.content .share-filled .pinterest .count,
+.content .share-filled .pinterest .count:hover,
+.content .share-filled .stumbleupon .count,
+.content .share-filled .stumbleupon .count:hover,
+.content .share-filled .twitter .count,
+.content .share-filled .twitter .count:hover {
+  color: $darkgrey;
+  border: 1px solid $darkgrey;
+}
+
+.content .share-filled .facebook .share,
+.content .share-filled .facebook:hover .count,
+.content .share-filled .googlePlus .share,
+.content .share-filled .googlePlus:hover .count,
+.content .share-filled .linkedin .share,
+.content .share-filled .linkedin:hover .count,
+.content .share-filled .pinterest .share,
+.content .share-filled .pinterest:hover .count,
+.content .share-filled .stumbleupon .share,
+.content .share-filled .stumbleupon:hover .count,
+.content .share-filled .twitter .share,
+.content .share-filled .twitter:hover .count {
+  background: $darkgrey !important;
+}
+
+.content .share-filled .facebook:hover .count,
+.content .share-filled .googlePlus:hover .count,
+.content .share-filled .linkedin:hover .count,
+.content .share-filled .pinterest:hover .count,
+.content .share-filled .stumbleupon:hover .count,
+.content .share-filled .twitter:hover .count {
+  color: $white;
+}
+
+
+// ## Jetpack
+//--------------------------------------------- */
+
+#wpstats {
+  display: none;
+}
+
+//* Sticky Message
+//---------------------------------------------------------------------------------------------------- */
+
+.sticky-message {
+  font-size: 16px;
+
+  position: fixed;
+  z-index: 999;
+
+  display: none;
+  overflow-y: scroll;
+
+  width: 100%;
+  max-height: 80px;
+  padding: 20px 5%;
+
+  text-align: center;
+
+  border-bottom: 2px solid $alert;
+  background-color: $darkgrey;
+  .widget-title {
+    margin-bottom: 10px;
+
+    color: $alert;
+  }
+}
+
+.sticky-message,
+.sticky-message a:hover,
+.sticky-message p {
+  color: $white;
+}
+
+.sticky-message a {
+  color: $link-color;
+}
+
+.sticky-message p:last-child {
+  margin-bottom: 0;
+}
