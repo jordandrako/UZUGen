@@ -5,7 +5,7 @@
 
 1. Make sure Git, Sass and Grunt are installed (these require node.js and ruby).
 2. Clone this repository to the wp-themes directory using ("git clone git@bitbucket.org:uzumedia/uzugenesis.git themeName")
-2a. Replace themeName with whatever you plan on naming the theme.
+2.1. Replace themeName with whatever you plan on naming the theme.
 3. Open a command line, point to the theme folder and run "npm install --save-dev"
 4. Rename UZUGenesis folder to your desired theme name.
 5. Open gruntfile.js and change the globalConfig src and dest to the new theme name folder.
