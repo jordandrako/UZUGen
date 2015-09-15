@@ -1,15 +1,14 @@
 # UZU Genesis Theme
-# Version 1.3.0
+### Version 1.3.0
 
 ## Installation Instructions
 
 1. Make sure Git, Sass and Grunt are installed (these require node.js and ruby).
 2. Clone this repository to the wp-themes directory using ("git clone git@bitbucket.org:uzumedia/uzugenesis.git themeName")
-2.1. Replace themeName with whatever you plan on naming the theme.
+2.1. Replace themeName with whatever you plan on naming the theme folder.
 3. Open a command line, point to the theme folder and run "npm install --save-dev"
-4. Rename UZUGenesis folder to your desired theme name.
-5. Open gruntfile.js and change the globalConfig src and dest to the new theme name folder.
-6. On the command line, run grunt, or grunt watch (grunt watch is set to the default grunt task).
+4. Open gruntfile.js and change the globalConfig src and dest to the new theme name folder.
+5. On the command line, run grunt, or grunt watch (grunt watch is set to the default grunt task).
 
 ## Optional steps and tips
 
