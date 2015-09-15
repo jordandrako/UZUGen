@@ -1,6 +1,10 @@
 {
   "name": "UZUGenesis",
   "version": "1.2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:uzumedia/uzugenesis.git"
+  },
   "main": "index.php",
   "author": "Jordan Janzen",
   "license": "ISC",
