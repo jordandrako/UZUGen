@@ -13,11 +13,3 @@ define('WP_SITEURL','http://localhost/site');
 
 // Turn on debug for local environment
 define('WP_DEBUG', true);
-
-define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '');
-
-define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . '');
-
-define('WP_CONTENT_DIR', dirname(__FILE__) . '');
-
-define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '');
