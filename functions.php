@@ -10,33 +10,31 @@ define( 'CHILD_THEME_VERSION', '2.1.2' );
 //* Remove jQuery and jQuery-ui scripts loading from header
 add_action('wp_enqueue_scripts', 'uzu_script_remove_header');
 function uzu_script_remove_header() {
-      wp_deregister_script( 'jquery' );
-      wp_deregister_script( 'jquery-ui' );
+  wp_deregister_script( 'jquery' );
+  wp_deregister_script( 'jquery-ui' );
 }
 
 //* Load jQuery and jQuery-ui script  just before closing Body tag - increases loading speed.
-add_action('genesis_after_footer', 'uzu_script_add_body');
+add_action('wp_enqueue_scripts', 'uzu_script_add_body');
 function uzu_script_add_body() {
-      wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js' );
-      wp_register_script( 'jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js' );
-      wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js', array( 'jquery' ), '4.0', false );
-      wp_enqueue_script( 'jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array( 'jquery' ), '1.10.3' );
+  wp_register_script( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js' );
+  wp_register_script( 'jquery-ui', '//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js' );
+
+  wp_enqueue_script( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js', array( 'jquery' ), '' );
+  wp_enqueue_script( 'jquery-ui', '//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js', array( 'jquery' ), '' );
 }
 
 //* Enqueue Javascript - Don't edit the production.js or production.min.js files. Add any js to global.js or new files in the /js/dev folder, they will be concatinated into production.js.
-add_action( 'wp_enqueue_scripts', 'uzu_production_js' );
-function uzu_production_js(){
+add_action( 'genesis_after_footer', 'uzu_production_script' );
+function uzu_production_script() {
+  wp_enqueue_script( 'production', get_stylesheet_directory_uri() . '/lib/js/production.min.js', array( 'jquery' ), '', true );
+}
 
-   wp_enqueue_script( 'production', get_stylesheet_directory_uri() . '/lib/js/production.min.js', array( 'jquery' ), '', true );
-
-};
 //* Enqueue Google Fonts and icons - Change google link to project's font, then edit _typography.scss accordingly.
-add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
+add_action( 'wp_enqueue_style', 'genesis_sample_google_fonts' );
 function genesis_sample_google_fonts() {
-
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700', array(), CHILD_THEME_VERSION );
+  wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:400,700,400italic', array(), CHILD_THEME_VERSION );
   wp_enqueue_style( 'dashicons' );
-
 }
 
 //* Add HTML5 markup structure
